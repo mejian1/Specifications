@@ -99,7 +99,7 @@ Undefined fields are replaced with the "." character, as described in the origin
 
 #### The Canonical Gene
 
-![Figure1](/img/figure1.png)  
+![Figure1](img/figure1.png)
 FIGURE 1
 
 This section describes the representation of a protein-coding gene in GFF3. To illustrate how a canonical gene is represented, consider Figure 1 (figure1.png). This indicates a gene named EDEN extending from position 1000 to position 9000. It encodes three alternatively-spliced transcripts named EDEN.1, EDEN.2 and EDEN.3, the last of which has two alternative translational start sites leading to the generation of two protein coding sequences.
@@ -309,7 +309,7 @@ Matches typically contain gaps; matches broken up by large gaps are usually call
 
 The SO does not have an HSP type. Instead, gapped matches are represented as a single feature that occupies a discontinuous location on the reference sequence. Figure 2 shows the same gene as before, but with a new track added showing an alignment of a sequenced cDNA to the genome. For the purposes of illustration, we have shown the regions of alignment to be exact across the three exons of the second spliced transcript (EDEN.2).
 
-![Figure2](/img/figure2.png)  
+![Figure2](img/figure2.png)
 FIGURE 2
 
 The recommended way to represent this alignment is with a single feature of type "cDNA_match" and a Gap attribute that indicates that the alignment is in three segments:
@@ -368,7 +368,7 @@ An application may wish to group the EST pair into a single feature. This can be
     ctg123 . match_part  1200  3200  2.2e-30  +  .    ID=match00002;Parent=cDNA00001;Target=mjm1123.5 5 506;Gap=M301 D1499 M201
     ctg123 . match_part  7000  9000  7.4e-32  -  .    ID=match00003;Parent=cDNA00001;Target=mjm1123.3 1 502;Gap=M101 D1499 M401
 
-![Figure3](/img/figure3.png)  
+![Figure3](img/figure3.png)
 FIGURE 3
 
 #### Transcript-Relative Alignments
